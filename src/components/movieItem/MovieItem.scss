@@ -1,0 +1,22 @@
+.movieItem__div{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 16px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.movieItem__div:hover{
+    cursor: pointer;
+}
+
+.movieItem__div #bigNumber{
+    position: absolute;
+    bottom: -50px;
+    left: -15px;
+    font-size: 6em;
+    text-shadow: 0px 0px 1px #0296E5,0px 0px 1px #0296E5,0px 0px 1px #0296E5,0px 0px 1px #0296E5,0px 0px 1px #0296E5,0px 0px 1px #0296E5,0px 0px 1px #0296E5;
+    font-family: 'Montserrat';
+    color: #232931;
+
+}

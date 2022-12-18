@@ -22,7 +22,7 @@ function App() {
               <Link to={`/home`}>Home  ( /home )</Link>
             </li>
             <li className='mb-5 text-cyan-300 text-4xl font-bold'>
-              <Link to={`/search`}>Search  ( /search )</Link>
+              <Link to={`/search/:text`}>Search  ( /search/:text )</Link>
             </li>
             <li className='mb-5 text-cyan-300 text-4xl font-bold'>
               <Link to={`/movie-detail`}>Movie Detail  ( /movie-detail )</Link>

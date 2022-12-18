@@ -6,6 +6,12 @@ import MovieDetail from './screens/movieDetail/MovieDetail'
 import Search from './screens/search/Search'
 import Home from './screens/home/Home'
 import './index.css'
+
+import { createContext } from 'react'
+
+const tokenContext = createContext("3c4a75c60ab27c385698962f1c76f654");
+
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,6 +31,10 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+    path: "/search/:text",
+    element: <Search />,
+  },
+  {
     path: "/search",
     element: <Search />,
   },
@@ -34,8 +44,13 @@ const router = createBrowserRouter([
   },
 ]);
 
+
+
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <tokenContext.Provider value="3c4a75c60ab27c385698962f1c76f654">
+      <RouterProvider router={router} />
+    </tokenContext.Provider>
   </React.StrictMode>,
 )

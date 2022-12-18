@@ -1,0 +1,9 @@
+.horizontalScroll__div {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 250px;
+}

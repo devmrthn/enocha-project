@@ -1,0 +1,20 @@
+.tabList__btn{
+    color: white;
+    height: 33px;
+    width: 92px;
+    left: 24px;
+    top: 430px;
+    
+}
+.tabList__btn__active{
+    border-bottom: 2px solid #3A3F47;
+}
+.tabList__movies{
+    width: 100%;
+    overflow: scroll;
+    max-height: 338px;
+}
+
+.movieItem__div__below{
+    margin-right: 0 !important;
+}
